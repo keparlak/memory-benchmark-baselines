@@ -1,0 +1,76 @@
+{
+  "length": 20,
+  "events": 21,
+  "mut_index": 1,
+  "mutation": "rename",
+  "tool": "assign_owner",
+  "v2_only": [
+    "assignee"
+  ],
+  "v1_only": [
+    "owner"
+  ],
+  "store_size": 11,
+  "stored_fresh": true,
+  "schema_q": {
+    "rank_fresh": 0,
+    "rank_update": 0,
+    "top20_fresh": 7,
+    "top20_stale": 1
+  },
+  "task_q": {
+    "rank_fresh": 0,
+    "rank_update": 0,
+    "top20_fresh": 7,
+    "top20_stale": 1
+  },
+  "mem0_ok": true,
+  "mem0_ok_taskq": true,
+  "nomem_ok": true,
+  "supersession_ok": true,
+  "slots": {
+    "ADD": 11
+  },
+  "write_errors": 0,
+  "seconds": 26,
+  "store_has_update": true,
+  "store_texts": [
+    "User assigned assignee 'upload-882' to ticket 'login-128'",
+    "The assign_owner function was updated to rename the 'owner' parameter to 'assignee', with the new signature: assign_owner(ticket_id: str, assignee: str)",
+    "User assigned assignee 'export-649' to ticket 'webhook-669'",
+    "User assigned assignee 'refund-540' to ticket 'latency-462'",
+    "User closed ticket 'export-524' with reason 'billing-337'",
+    "User closed ticket 'search-513' with reason 'billing-334'",
+    "User created a ticket titled 'latency-687' with body 'latency-784' and priority 'timeout-745'",
+    "User assigned assignee 'latency-473' to ticket 'sync-123'",
+    "User assigned assignee 'search-500' to ticket 'export-227'",
+    "User assigned assignee 'sync-393' to ticket 'login-421'",
+    "User closed ticket 'billing-489' with reason 'timeout-351'"
+  ],
+  "ranked_texts": [
+    "The assign_owner function was updated to rename the 'owner' parameter to 'assignee', with the new signature: assign_owner(ticket_id: str, assignee: str)",
+    "User assigned assignee 'export-649' to ticket 'webhook-669'",
+    "User assigned assignee 'search-500' to ticket 'export-227'",
+    "User assigned assignee 'sync-393' to ticket 'login-421'",
+    "User assigned assignee 'upload-882' to ticket 'login-128'",
+    "User assigned assignee 'refund-540' to ticket 'latency-462'",
+    "User assigned assignee 'latency-473' to ticket 'sync-123'",
+    "User created a ticket titled 'latency-687' with body 'latency-784' and priority 'timeout-745'",
+    "User closed ticket 'export-524' with reason 'billing-337'",
+    "User closed ticket 'search-513' with reason 'billing-334'",
+    "User closed ticket 'billing-489' with reason 'timeout-351'"
+  ],
+  "ranked_texts_task": [
+    "The assign_owner function was updated to rename the 'owner' parameter to 'assignee', with the new signature: assign_owner(ticket_id: str, assignee: str)",
+    "User assigned assignee 'sync-393' to ticket 'login-421'",
+    "User assigned assignee 'latency-473' to ticket 'sync-123'",
+    "User assigned assignee 'upload-882' to ticket 'login-128'",
+    "User assigned assignee 'export-649' to ticket 'webhook-669'",
+    "User assigned assignee 'refund-540' to ticket 'latency-462'",
+    "User created a ticket titled 'latency-687' with body 'latency-784' and priority 'timeout-745'",
+    "User assigned assignee 'search-500' to ticket 'export-227'",
+    "User closed ticket 'export-524' with reason 'billing-337'",
+    "User closed ticket 'billing-489' with reason 'timeout-351'",
+    "User closed ticket 'search-513' with reason 'billing-334'"
+  ]
+}

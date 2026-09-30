@@ -62,31 +62,52 @@ This reproduces, from a different direction, the finding in [arXiv:2606.01435](h
 
 ---
 
+## Follow-up: schema changes mid-run
+
+[`experiments/schema_bump/`](experiments/schema_bump/) — a tool's schema changes
+partway through an agent run; the agent must then call it correctly.
+
+| memory arm | valid call |
+|---|---|
+| "newest schema wins" policy (~20 lines) | **100%** |
+| full history in context | **95%** |
+| Mem0 OSS 2.1.0 | **20%** |
+
+And as runs grow from 20 to 200 events, Mem0 (queried with the agent's own
+task) falls from 75% to 25% while full history stays at 24/24. Mem0 wrote
+2,840 memories, every one an `ADD` — its documented v2 design — and the open
+source ranker has no time signal. Details, caveats and the pitfalls we hit are
+in that folder's README.
+
+---
+
 ## Run it
 
 ```bash
 pip install pyarrow
-python fetch_data.py        # pulls the public parquet splits
-python deney3_icl_taban.py Test_Time_Learning.parquet
-python deney1_v2.py cr.parquet
-python deney1_v3_saglamlik.py cr.parquet
+python fetch_data.py                   # pulls the public parquet splits
+python mcc_tfidf_baseline.py           # Test_Time_Learning.parquet
+python factconsolidation_baseline.py   # conflict_resolution.parquet
+python robustness_paraphrase.py        # conflict_resolution.parquet
 ```
 
-`gorseller.py` regenerates the charts (needs matplotlib).
+`charts.py` regenerates the charts (needs matplotlib).
 
 ## Files
 
 | File | What it does |
 |---|---|
-| `deney1_v2.py` | FactConsolidation solver — 40 fact templates, compositional question parser, newest-serial policy |
-| `deney1_v3_saglamlik.py` | Paraphrase robustness curve |
-| `deney3_icl_taban.py` | TF-IDF + k-NN on Test_Time_Learning |
-| `gorseller.py` | Charts |
+| `factconsolidation_baseline.py` | FactConsolidation solver — 40 fact templates, compositional question parser, newest-serial policy |
+| `robustness_paraphrase.py` | Paraphrase robustness curve |
+| `mcc_tfidf_baseline.py` | TF-IDF + k-NN on Test_Time_Learning |
+| `charts.py` | Charts |
+| `experiments/schema_bump/` | Follow-up: tool schema changes mid-run, Mem0 vs full history vs a supersession policy (see below) |
 
 ## Method notes
 
 - Metric is SubEM (substring exact match), as in MAB.
 - Published comparisons use MAB v3 Table 7 and Table 17 values. **I did not re-run those systems** — same choice the post-retrieval-assembly paper makes, to avoid untracked implementation differences.
+- MAB (July 2025) evaluated Mem0's earlier two-pass pipeline. Mem0 v2.0.0 (April 2026) replaced it with ADD-only extraction, so the Mem0 figure above describes a previous version. The `schema_bump` follow-up tests the current one.
 - The FactConsolidation validity check: 55% of (subject, relation) groups carry conflicting values, and 95–100% of single-hop gold answers are the highest-serial fact. The task does measure temporal supersession.
 - The parser covers 92–100% of facts per split depending on context length.
 

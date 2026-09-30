@@ -1,0 +1,103 @@
+{
+  "length": 20,
+  "events": 21,
+  "mut_index": 0,
+  "mutation": "rename",
+  "tool": "create_ticket",
+  "v2_only": [
+    "subject"
+  ],
+  "v1_only": [
+    "title"
+  ],
+  "store_size": 20,
+  "stored_fresh": true,
+  "schema_q": {
+    "rank_fresh": 1,
+    "rank_update": null,
+    "top20_fresh": 3,
+    "top20_stale": 10
+  },
+  "task_q": {
+    "rank_fresh": 5,
+    "rank_update": null,
+    "top20_fresh": 3,
+    "top20_stale": 10
+  },
+  "mem0_ok": false,
+  "mem0_ok_taskq": false,
+  "nomem_ok": true,
+  "supersession_ok": true,
+  "slots": {
+    "ADD": 20
+  },
+  "write_errors": 0,
+  "seconds": 43,
+  "store_has_update": false,
+  "store_texts": [
+    "User called close_ticket with ticket_id 'refund-539' and reason 'sync-898'",
+    "User called create_ticket with title 'search-498', body 'timeout-495', and priority 'billing-847'",
+    "User called create_ticket with title 'refund-140', body 'sync-861', and priority 'webhook-145'",
+    "User called create_ticket with title 'latency-888', body 'latency-346', and priority 'export-246'",
+    "User called add_label with ticket_id 'search-385' and label 'upload-394'",
+    "User called create_ticket with body 'upload-560', priority 'latency-550', and subject 'sync-386'",
+    "User called add_label with ticket_id 'refund-352' and label 'export-379'",
+    "User called set_due_date with ticket_id 'export-364' and due date 'login-493'",
+    "User called create_ticket with title 'billing-181', body 'webhook-148', and priority 'webhook-837'",
+    "User called create_ticket with title 'billing-936', body 'latency-742', and priority 'search-849'",
+    "User called create_ticket with title 'webhook-768', body 'upload-949', and priority 'login-364'",
+    "User called create_ticket with title 'timeout-908', body 'export-430', and priority 'webhook-791'",
+    "User called assign_owner with ticket_id 'refund-902' and owner 'search-872'",
+    "User called create_ticket with body 'timeout-586', priority 'login-256', and subject 'timeout-232'",
+    "User called create_ticket with title 'search-359', body 'webhook-794', and priority 'login-160'",
+    "User called create_ticket with body 'upload-479', priority 'webhook-183', and subject 'search-127'",
+    "User called add_label with ticket_id 'search-208' and label 'search-793'",
+    "User called close_ticket with ticket_id 'export-872-872' and reason 'export-516'",
+    "User called create_ticket with title 'webhook-149', body 'refund-482', and priority 'latency-274'",
+    "User called create_ticket with title 'sync-792', body 'refund-659', and priority 'export-390'"
+  ],
+  "ranked_texts": [
+    "User called create_ticket with title 'latency-888', body 'latency-346', and priority 'export-246'",
+    "User called create_ticket with body 'timeout-586', priority 'login-256', and subject 'timeout-232'",
+    "User called create_ticket with title 'sync-792', body 'refund-659', and priority 'export-390'",
+    "User called create_ticket with title 'timeout-908', body 'export-430', and priority 'webhook-791'",
+    "User called create_ticket with body 'upload-560', priority 'latency-550', and subject 'sync-386'",
+    "User called create_ticket with title 'search-498', body 'timeout-495', and priority 'billing-847'",
+    "User called create_ticket with title 'billing-936', body 'latency-742', and priority 'search-849'",
+    "User called create_ticket with title 'refund-140', body 'sync-861', and priority 'webhook-145'",
+    "User called create_ticket with title 'billing-181', body 'webhook-148', and priority 'webhook-837'",
+    "User called create_ticket with title 'search-359', body 'webhook-794', and priority 'login-160'",
+    "User called create_ticket with title 'webhook-149', body 'refund-482', and priority 'latency-274'",
+    "User called create_ticket with body 'upload-479', priority 'webhook-183', and subject 'search-127'",
+    "User called create_ticket with title 'webhook-768', body 'upload-949', and priority 'login-364'",
+    "User called set_due_date with ticket_id 'export-364' and due date 'login-493'",
+    "User called add_label with ticket_id 'search-208' and label 'search-793'",
+    "User called add_label with ticket_id 'refund-352' and label 'export-379'",
+    "User called close_ticket with ticket_id 'export-872-872' and reason 'export-516'",
+    "User called add_label with ticket_id 'search-385' and label 'upload-394'",
+    "User called assign_owner with ticket_id 'refund-902' and owner 'search-872'",
+    "User called close_ticket with ticket_id 'refund-539' and reason 'sync-898'"
+  ],
+  "ranked_texts_task": [
+    "User called create_ticket with title 'timeout-908', body 'export-430', and priority 'webhook-791'",
+    "User called create_ticket with title 'billing-181', body 'webhook-148', and priority 'webhook-837'",
+    "User called create_ticket with title 'webhook-149', body 'refund-482', and priority 'latency-274'",
+    "User called create_ticket with title 'refund-140', body 'sync-861', and priority 'webhook-145'",
+    "User called create_ticket with title 'webhook-768', body 'upload-949', and priority 'login-364'",
+    "User called create_ticket with body 'upload-479', priority 'webhook-183', and subject 'search-127'",
+    "User called create_ticket with title 'search-359', body 'webhook-794', and priority 'login-160'",
+    "User called create_ticket with body 'timeout-586', priority 'login-256', and subject 'timeout-232'",
+    "User called create_ticket with title 'search-498', body 'timeout-495', and priority 'billing-847'",
+    "User called create_ticket with title 'sync-792', body 'refund-659', and priority 'export-390'",
+    "User called create_ticket with body 'upload-560', priority 'latency-550', and subject 'sync-386'",
+    "User called create_ticket with title 'latency-888', body 'latency-346', and priority 'export-246'",
+    "User called create_ticket with title 'billing-936', body 'latency-742', and priority 'search-849'",
+    "User called close_ticket with ticket_id 'refund-539' and reason 'sync-898'",
+    "User called close_ticket with ticket_id 'export-872-872' and reason 'export-516'",
+    "User called set_due_date with ticket_id 'export-364' and due date 'login-493'",
+    "User called add_label with ticket_id 'search-385' and label 'upload-394'",
+    "User called add_label with ticket_id 'refund-352' and label 'export-379'",
+    "User called add_label with ticket_id 'search-208' and label 'search-793'",
+    "User called assign_owner with ticket_id 'refund-902' and owner 'search-872'"
+  ]
+}

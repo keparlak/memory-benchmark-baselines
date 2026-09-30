@@ -1,0 +1,47 @@
+[
+  {
+    "ep": 3,
+    "mutation": "remove",
+    "ok": false,
+    "stored": false,
+    "loose": null,
+    "retrieved": false,
+    "no_call": 0,
+    "fail": 0,
+    "slots": {
+      "ADD": 60
+    },
+    "add_calls": 7,
+    "errors": 0
+  },
+  {
+    "ep": 4,
+    "mutation": "remove",
+    "ok": false,
+    "stored": false,
+    "loose": null,
+    "retrieved": false,
+    "no_call": 0,
+    "fail": 0,
+    "slots": {
+      "ADD": 40
+    },
+    "add_calls": 7,
+    "errors": 0
+  },
+  {
+    "ep": 5,
+    "mutation": "rename",
+    "ok": false,
+    "stored": false,
+    "loose": true,
+    "retrieved": false,
+    "no_call": 0,
+    "fail": 0,
+    "slots": {
+      "ADD": 50
+    },
+    "add_calls": 7,
+    "errors": 0
+  }
+]

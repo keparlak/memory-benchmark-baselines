@@ -1,0 +1,86 @@
+{
+  "nemotron-120b|A no-memory": {
+    "ok": 11,
+    "n": 12,
+    "no_call": 0,
+    "fail": 1,
+    "pct": 91.66666666666667
+  },
+  "nemotron-120b|C tfidf+rec": {
+    "ok": 0,
+    "n": 12,
+    "no_call": 0,
+    "fail": 1,
+    "pct": 0.0
+  },
+  "nemotron-120b|D supersess": {
+    "ok": 8,
+    "n": 12,
+    "no_call": 0,
+    "fail": 4,
+    "pct": 66.66666666666667
+  },
+  "nemotron-120b|E lossy": {
+    "ok": 0,
+    "n": 12,
+    "no_call": 0,
+    "fail": 2,
+    "pct": 0.0
+  },
+  "nemotron-550b|A no-memory": {
+    "ok": 12,
+    "n": 12,
+    "no_call": 0,
+    "fail": 0,
+    "pct": 100.0
+  },
+  "nemotron-550b|C tfidf+rec": {
+    "ok": 0,
+    "n": 12,
+    "no_call": 0,
+    "fail": 0,
+    "pct": 0.0
+  },
+  "nemotron-550b|D supersess": {
+    "ok": 12,
+    "n": 12,
+    "no_call": 0,
+    "fail": 0,
+    "pct": 100.0
+  },
+  "nemotron-550b|E lossy": {
+    "ok": 0,
+    "n": 12,
+    "no_call": 0,
+    "fail": 0,
+    "pct": 0.0
+  },
+  "deepseek-flash|A no-memory": {
+    "ok": 12,
+    "n": 12,
+    "no_call": 0,
+    "fail": 0,
+    "pct": 100.0
+  },
+  "deepseek-flash|C tfidf+rec": {
+    "ok": 0,
+    "n": 12,
+    "no_call": 0,
+    "fail": 0,
+    "pct": 0.0
+  },
+  "deepseek-flash|D supersess": {
+    "ok": 12,
+    "n": 12,
+    "no_call": 0,
+    "fail": 0,
+    "pct": 100.0
+  },
+  "deepseek-flash|E lossy": {
+    "ok": 0,
+    "n": 12,
+    "no_call": 0,
+    "fail": 0,
+    "pct": 0.0
+  }
+}

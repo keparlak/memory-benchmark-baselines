@@ -1,0 +1,76 @@
+{
+  "length": 20,
+  "events": 21,
+  "mut_index": 6,
+  "mutation": "type_change",
+  "tool": "set_due_date",
+  "v2_only": [
+    "due_ts"
+  ],
+  "v1_only": [
+    "due"
+  ],
+  "store_size": 11,
+  "stored_fresh": true,
+  "schema_q": {
+    "rank_fresh": 0,
+    "rank_update": 0,
+    "top20_fresh": 6,
+    "top20_stale": 1
+  },
+  "task_q": {
+    "rank_fresh": 0,
+    "rank_update": 5,
+    "top20_fresh": 6,
+    "top20_stale": 1
+  },
+  "mem0_ok": true,
+  "mem0_ok_taskq": true,
+  "nomem_ok": true,
+  "supersession_ok": true,
+  "slots": {
+    "ADD": 11
+  },
+  "write_errors": 0,
+  "seconds": 29,
+  "store_has_update": true,
+  "store_texts": [
+    "User called set_due_date with ticket_id='latency-676' and due_ts=2",
+    "User called close_ticket with ticket_id='sync-153' and reason='search-217'",
+    "User called close_ticket with ticket_id='timeout-152' and reason='upload-750'",
+    "User called set_due_date with ticket_id='export-876' and due_ts=2",
+    "User called add_label with ticket_id='billing-442' and label='timeout-643'",
+    "User called set_due_date with ticket_id='webhook-101' and due_ts=1",
+    "User called set_due_date with ticket_id='login-834' and due_ts=1",
+    "User updated the set_due_date function signature to use 'due_ts' (int) parameter instead of 'due'",
+    "User called create_ticket with title='login-926', body='search-547', and priority='webhook-474'",
+    "User called add_label with ticket_id='timeout-787' and label='upload-658'",
+    "User called set_due_date with ticket_id='billing-770' and due_ts=1"
+  ],
+  "ranked_texts": [
+    "User updated the set_due_date function signature to use 'due_ts' (int) parameter instead of 'due'",
+    "User called set_due_date with ticket_id='export-876' and due_ts=2",
+    "User called set_due_date with ticket_id='latency-676' and due_ts=2",
+    "User called set_due_date with ticket_id='login-834' and due_ts=1",
+    "User called set_due_date with ticket_id='billing-770' and due_ts=1",
+    "User called set_due_date with ticket_id='webhook-101' and due_ts=1",
+    "User called add_label with ticket_id='billing-442' and label='timeout-643'",
+    "User called add_label with ticket_id='timeout-787' and label='upload-658'",
+    "User called close_ticket with ticket_id='timeout-152' and reason='upload-750'",
+    "User called close_ticket with ticket_id='sync-153' and reason='search-217'",
+    "User called create_ticket with title='login-926', body='search-547', and priority='webhook-474'"
+  ],
+  "ranked_texts_task": [
+    "User called set_due_date with ticket_id='webhook-101' and due_ts=1",
+    "User called set_due_date with ticket_id='latency-676' and due_ts=2",
+    "User called set_due_date with ticket_id='login-834' and due_ts=1",
+    "User called set_due_date with ticket_id='export-876' and due_ts=2",
+    "User called set_due_date with ticket_id='billing-770' and due_ts=1",
+    "User updated the set_due_date function signature to use 'due_ts' (int) parameter instead of 'due'",
+    "User called create_ticket with title='login-926', body='search-547', and priority='webhook-474'",
+    "User called close_ticket with ticket_id='timeout-152' and reason='upload-750'",
+    "User called add_label with ticket_id='timeout-787' and label='upload-658'",
+    "User called add_label with ticket_id='billing-442' and label='timeout-643'",
+    "User called close_ticket with ticket_id='sync-153' and reason='search-217'"
+  ]
+}

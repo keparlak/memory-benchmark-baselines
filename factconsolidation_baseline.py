@@ -212,6 +212,10 @@ def run(parquet_path='conflict_resolution.parquet'):
 
 
 if __name__ == '__main__':
+    # Gold answers contain non-ASCII names (e.g. 'Kūkai'); Windows consoles
+    # default to a legacy code page and would crash on print.
+    if hasattr(sys.stdout, 'reconfigure'):
+        sys.stdout.reconfigure(encoding='utf-8', errors='replace')
     res = run(sys.argv[1] if len(sys.argv) > 1 else 'conflict_resolution.parquet')
     print(f"{'task':<32}{'n':>4}{'correct':>9}{'acc%':>7}{'covered':>9}{'acc_on_covered%':>17}")
     for r in res:

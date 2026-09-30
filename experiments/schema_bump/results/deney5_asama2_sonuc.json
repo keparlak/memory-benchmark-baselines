@@ -1,0 +1,38 @@
+{
+  "B mem0": {
+    "valid": 0,
+    "total": 40,
+    "stored_v2": 0,
+    "retrieved_v2": 0,
+    "no_call": 0,
+    "llm_fail": 28,
+    "attribution": {
+      "v2 SAKLANMADI|v2 getirilmedi": 40
+    },
+    "by_mutation": {
+      "type_change": [
+        0,
+        8
+      ],
+      "remove": [
+        0,
+        9
+      ],
+      "rename": [
+        0,
+        13
+      ],
+      "split": [
+        0,
+        4
+      ],
+      "add_required": [
+        0,
+        6
+      ]
+    },
+    "loose_n": 31,
+    "loose_hit": 0,
+    "slots": {}
+  }
+}
